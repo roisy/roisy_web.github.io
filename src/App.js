@@ -63,7 +63,20 @@ class App extends Component {
           <br />
           <Grid>
             <Row>
-              <Col sm={6}>
+              <Col sm={4}>
+                <p><strong>Juan Francisco Cabrera</strong></p><br />
+                <Image src="http://placekitten.com/g/255/255" circle alt="Random Name" onClick={() => this.setState({ openFirst: !this.state.openFirst })}/>
+                <Collapse in={this.state.openFirst} style={{padding: 20}}>
+                  <div>
+                    <Well>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Aliquam purus sit amet luctus venenatis lectus. 
+                    Euismod elementum nisi quis eleifend. 
+                    </Well>
+                  </div>
+                </Collapse>
+              </Col>
+              <Col sm={4}>
                 <p><strong>Fernando M. Quintana</strong></p><br />
                 <Image src="http://placekitten.com/g/255/255" circle alt="Random Name" onClick={() => this.setState({ openFirst: !this.state.openFirst })}/>
                 <Collapse in={this.state.openFirst} style={{padding: 20}}>
@@ -76,7 +89,7 @@ class App extends Component {
                   </div>
                 </Collapse>
               </Col>
-              <Col sm={6}>
+              <Col sm={4}>
                 <p><strong>Juan A. Herrera</strong></p><br />
                 <Image src="http://placekitten.com/g/255/255" circle alt="Random Name" onClick={() => this.setState({ openSecond: !this.state.openSecond })}/>
                 <Collapse in={this.state.openSecond} style={{padding: 20}}>
@@ -199,7 +212,7 @@ Vivamus interdum vitae augue ac tincidunt. Quisque vehicula elementum faucibus. 
             }}>
             <span className="glyphicon glyphicon-chevron-up"></span>
           </span>
-          <p>© Copyright 2018   |   Roisy. All rights reserved.</p>
+          <p>© Copyright 2019   |   Roisy. All rights reserved.</p>
         </footer>
       </div>
     );
